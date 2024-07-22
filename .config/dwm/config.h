@@ -1,4 +1,6 @@
-//* appearance */
+/* See LICENSE file for copyright and license details. */
+
+/* appearance */
 static const unsigned int borderpx = 1;
 static const unsigned int snap = 32;
 static const unsigned int systraypinning = 0;
@@ -109,4 +111,10 @@ static const Button buttons[] = {
     { ClkTagBar, 0, Button3, toggleview, {0} },
     { ClkTagBar, MODKEY, Button1, tag, {0} },
     { ClkTagBar, MODKEY, Button3, toggletag, {0} },
+};
+
+/* autostart */
+static const char *const autostart[] = {
+    "slstatus", NULL,
+    NULL
 };
